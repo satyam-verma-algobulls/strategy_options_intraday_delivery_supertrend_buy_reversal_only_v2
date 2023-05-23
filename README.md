@@ -1,0 +1,1 @@
+# strategy_options_intraday_delivery_supertrend_buy_reversal_only_v2
