@@ -1,0 +1,333 @@
+[2023-05-23 14:14:47] Performing sanity checks on cfg strategy_parameters, setting up required data structures...
+[2023-05-23 14:14:47] Sanity checks on cfg successful.
+[2023-05-23 14:14:47] Currency set to "INR"
+[2023-05-23 14:14:47] Setting up broker connection...
+[2023-05-23 14:14:47] Broker connection has been setup successfully.
+[2023-05-23 14:14:47] (NSE_FO) Funds available in client's ABVIRTUALBROKER account is : INR '1000000000.00'
+[2023-05-23 14:14:47] 
+########################################
+ INITIALIZING ALGOBULLS CORE (v3.3.0 SECURE MODE)... 
+########################################
+[2023-05-23 14:14:47] Welcome ALGOBULLS VIRTUAL USER!
+[2023-05-23 14:14:47] Reading strategy...
+[2023-05-23 14:14:47] 
+########################################
+STRATEGY VERSION: 3.3.1
+########################################
+[2023-05-23 14:14:47] Entering Backtesting mode. Henceforth, all timestamps will be Backtesting timestamps...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] STARTING ALGOBULLS CORE...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] 
+  #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+
+    #    #        #####  ####### ######  #     # #       #        #####    
+   # #   #       #     # #     # #     # #     # #       #       #     #   
+  #   #  #       #       #     # #     # #     # #       #       #         
+ #     # #       #  #### #     # ######  #     # #       #        #####    
+ ####### #       #     # #     # #     # #     # #       #             #   
+ #     # #       #     # #     # #     # #     # #       #       #     #   
+ #     # #######  #####  ####### ######   #####  ####### #######  #####    
+
+  #####  ####### ######  #######
+ #     # #     # #     # #
+ #       #     # #     # #
+ #       #     # ######  #####
+ #       #     # #   #   #
+ #     # #     # #    #  #
+  #####  ####### #     # ####### 
+
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------Master Cfg Parameters:--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User: ALGOBULLS VIRTUAL USER
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Broker: ABVIRTUALBROKER
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_POSITIONS: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_HOLDINGS_TPLUS1: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_HOLDINGS_TPLUS2: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_POSITIONS_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_HOLDINGS_TPLUS1_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_HOLDINGS_TPLUS2_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_INTRADAY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS0_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS1_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS2_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: System Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Trading type: BACKTESTING
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User trading start time: 2023-02-01 09:15:00+05:30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User trading end time: 2023-02-15 15:30:00+05:30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Funds Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Credit Exposure: 1
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Candle Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Candle interval (sec): 1800
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Strategy Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Strategy: Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Parameters: {'FRESH_ORDER_CANDLE': 15, 'START_TIME_HOURS': 9, 'START_TIME_MINUTES': 16, 'END_TIME_HOURS': 15, 'END_TIME_MINUTES': 30, 'SUPERTREND_FACTOR': 2.6, 'SUPERTREND_LENGTH': 8, 'NO_OF_STRIKES_CE': 0, 'NO_OF_STRIKES_PE': 0, 'STRIKE_DIRECTION_CE': 1, 'STRIKE_DIRECTION_PE': 1, 'NO_OF_STRIKES_CE_HEDGE': 5, 'NO_OF_STRIKES_PE_HEDGE': 5, 'STRIKE_DIRECTION_CE_HEDGE': 2, 'STRIKE_DIRECTION_PE_HEDGE': 2, 'STOPLOSS_POINTS': 50, 'HEDGE_POINTS': 30, 'SL_RANGE': 5, 'INSTRUMENT_SEGMENT': 3, 'INSTRUMENT_EXCHANGE_TOKEN': 1016}
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Strategy Mode: DELIVERY
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Instruments Bucket: instruments_bucket | [NSE_FO:BANKNIFTY-I]
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Number of Lots: 1
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Risk Management Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Desired profit: 1000000.0
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite: 1000000.0
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] PnL scan frequency (in sec): 30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Other Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Max orders count: 100
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Crossover accuracy decimals: 2
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] ------------------------------------------------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Instrument (NSE_FO:BANKNIFTY-I) subscribed to historical data successfully
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] 
+####################
+Strategy Parameters:
+StrategyParameters([('FRESH_ORDER_CANDLE', 15),
+                    ('START_TIME_HOURS', 9),
+                    ('START_TIME_MINUTES', 16),
+                    ('END_TIME_HOURS', 15),
+                    ('END_TIME_MINUTES', 30),
+                    ('SUPERTREND_FACTOR', 2.6),
+                    ('SUPERTREND_LENGTH', 8),
+                    ('NO_OF_STRIKES_CE', 0),
+                    ('NO_OF_STRIKES_PE', 0),
+                    ('STRIKE_DIRECTION_CE', 1),
+                    ('STRIKE_DIRECTION_PE', 1),
+                    ('NO_OF_STRIKES_CE_HEDGE', 5),
+                    ('NO_OF_STRIKES_PE_HEDGE', 5),
+                    ('STRIKE_DIRECTION_CE_HEDGE', 2),
+                    ('STRIKE_DIRECTION_PE_HEDGE', 2),
+                    ('STOPLOSS_POINTS', 50),
+                    ('HEDGE_POINTS', 30),
+                    ('SL_RANGE', 5),
+                    ('INSTRUMENT_SEGMENT', 3),
+                    ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])
+####################
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Launching P&L tracker...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] For the session, the risk appetite absolute value is INR 1000000.00. If net pnl goes below this value, trading would be stopped
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] For the session, desired profit target absolute value is INR 1000000.00. If net pnl goes above this value, trading would be stopped
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] Fetched message: {'id': 4142, 'timestamp': '2023-05-23T07:55:27.264900+00:00', 'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'value': {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}}} | {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}} | 4142
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 09:45:00+05:30)...
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41142.0           40617.04
+         (LATEST)            41310.9           40827.77
+[BT] [2023-02-01 09:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 09:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 10:15:00+05:30)...
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41310.9           40827.77
+         (LATEST)           41379.45           40827.77
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 10:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 10:45:00+05:30)...
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41379.45           40827.77
+         (LATEST)            41486.9           40896.97
+[BT] [2023-02-01 10:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 10:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 11:15:00+05:30)...
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41486.9           40896.97
+         (LATEST)           41469.95           40938.71
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 11:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 11:45:00+05:30)...
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41469.95           40938.71
+         (LATEST)            41516.2           40938.71
+[BT] [2023-02-01 11:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 11:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 12:15:00+05:30)...
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41516.2           40938.71
+         (LATEST)            41450.0           40938.71
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 12:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 12:45:00+05:30)...
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41450.0           40938.71
+         (LATEST)           41825.25           40980.09
+[BT] [2023-02-01 12:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 12:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 13:15:00+05:30)...
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41825.25           40980.09
+         (LATEST)            42033.2           41265.09
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 13:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 13:45:00+05:30)...
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            42033.2           41265.09
+         (LATEST)            41474.4           41265.09
+[BT] [2023-02-01 13:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 13:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 14:15:00+05:30)...
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41474.4           41265.09
+         (LATEST)           41257.65           42298.53
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Instrument (NSE_IDX:NIFTY BANK) subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Entering position for instrument: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]...
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Instrument (NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]) subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-01 14:15:00,000] [INFO] [strategy] For NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL], saving instrument string to memory
+[BT] [2023-02-01 14:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 14:45:00+05:30)...
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:45:00,000] [INFO] [strategy] Placing stoploss order for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+[BT] [2023-02-01 14:45:00,000] [INFO] [strategy] For Exit Order: instrument: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] | trigger price: 222.8 | price: 211.66 | qty: 25 | variety: ORDER_VARIETY_STOPLOSS_LIMIT
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING)]
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT] [STATUS:TRIGGER PENDING]
+[BT] [2023-02-01 14:45:00,000] [INFO] [utils] Crossover Details:
+                  #   HEDGE_CLOSE_SERIES  HEDGE_POINTS_SERIES
+         (PREVIOUS)               274.35                242.8
+           (LATEST)                699.3                242.8
+[BT] [2023-02-01 14:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 14:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 15:15:00+05:30)...
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover Details:
+                  #   HEDGE_CLOSE_SERIES  HEDGE_POINTS_SERIES
+         (PREVIOUS)                699.3                242.8
+           (LATEST)                623.1                242.8
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-01 15:45:00+05:30)...
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_IDX:NIFTY BANK 
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] 
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [RESUME ORDER] [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]]
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE)]
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Adding instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] to instruments_bucket, instruments_launched & instruments_running
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Fetched message: {'id': 4142, 'timestamp': '2023-05-23T07:55:27.264900+00:00', 'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'value': {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}}} | {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}} | 4142
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_IDX:NIFTY BANK 
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] 
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Received event EXCEPTION. Stopping AlgoBulls Trading Core Engine...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Cancelling all open orders (if any)... Starting
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING --> CANCEL PENDING --> CANCELLED)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Cancelling all open orders (if any)... Done
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_INTRADAY (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T0 (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T1 (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T2 (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [oms] 
+
+PENDING ORDERS:
+
+
+COMPLETED ORDERS:
+[2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING --> CANCEL PENDING --> CANCELLED
+
+[2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE
+
+[2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+
+POSITIONS:
+
+
+HOLDINGS:
+
+
+
+
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] [User: ALGOBULLS VIRTUAL USER] Trading session completed
+[BT] [2023-02-02 09:15:00,000] [CRITICAL] [tls] Dumping Debug Stack to Python friendly Traceback Format for Python Build Customers: Uncaught exception | Exception Class: <class 'KeyError'> | Exception Details: 'HEDGE' | Traceback Below:
+  File "/home/satyamverma/work/strategy/7.options_v3/./sstrategy/strategy_options_intraday_delivery_supertrend_buy_reversal_only_v2.py", line 437, in strategy_select_instruments_for_exit
+    self.logger.debug(f"HEDGE {self.strategy_dictionary[base_inst_str][HEDGE]} | NORMAL: {self.strategy_dictionary[base_inst_str][NORMAL]}")
+
+[BT] [2023-02-02 09:15:00,000] [CRITICAL] [tls] An error has occurred due to which the strategy execution cannot proceed anymore. Reason: 'HEDGE'.
+If the reason doesn't help, please double check the tweak parameters. If everything seems fine, please checkout https://community.algobulls.com or contact developers@algobulls.com for support.

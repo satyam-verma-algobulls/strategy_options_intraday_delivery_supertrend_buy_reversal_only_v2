@@ -1,0 +1,828 @@
+[2023-05-23 14:14:47] [DEBUG] [utils] Created symlink | src: logs/Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2/2023-05-23/user.log | dest: /home/satyamverma/work/strategy/7.options_v3/user.log... | cwd: /home/satyamverma/work/strategy/7.options_v3
+[2023-05-23 14:14:47] [DEBUG] [tls] Copying yaml files for debug...
+[2023-05-23 14:14:47] [DEBUG] [tls] Hostname: ip-172-31-23-64
+[2023-05-23 14:14:47] [INFO] [tls] Performing sanity checks on cfg strategy_parameters, setting up required data structures...
+[2023-05-23 14:14:47] [DEBUG] [utils] Port split is ENABLED
+[2023-05-23 14:14:47] [DEBUG] [utils] Setting up sockets for thread_id: 879826
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7777 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7777 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7778 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7778 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7779 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7779 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7779 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7779 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [utils] Connecting to socket tcp://localhost:7779 from MainThread...
+[2023-05-23 14:14:47] [DEBUG] [utils] ... connected to socket!
+[2023-05-23 14:14:47] [DEBUG] [tls] Adding instruments to instruments_bucket (if valid)...
+[2023-05-23 14:14:47] [DEBUG] [utils] Sending command to AB Historical DB [cmd_code: HISTDB_CMD_CODE_FETCH_INSTRUMENT_BULK] [cmd_data size: 56] ...
+[2023-05-23 14:14:47] [DEBUG] [utils] Received response | Size: 88 | TAT (sec.): 0.00 | C:6
+[2023-05-23 14:14:47] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY-I not present in instruments_bucket. Adding...
+[2023-05-23 14:14:47] [INFO] [tls] Sanity checks on cfg successful.
+[2023-05-23 14:14:47] [INFO] [tls] Currency set to "INR"
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: END OF MARKET
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: EMERGENCY
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: EXCEPTION
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: MANUAL STOP
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: RISK APPETITE BREACHED
+[2023-05-23 14:14:47] [DEBUG] [utils] New event created: TARGET ACHIEVED
+[2023-05-23 14:14:47] [INFO] [tls] Setting up broker connection...
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (update_hist_data_all_subscribed_instruments) subscribed to subscriber 'CLOCK_PRE_CANDLE_START_UPDATES' successfully
+[2023-05-23 14:14:47] [DEBUG] [oms] Setting pnl reporting mode to COLLECTIVE
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (update_pnl_table) subscribed to subscriber 'ORDER_COMPLETION_UPDATES' successfully
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (clear_queue) subscribed to subscriber 'CLOCK_POST_MARKET_END_UPDATES' successfully
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (process_queue) subscribed to subscriber 'CLOCK_PRE_CANDLE_START_UPDATES' successfully
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (update_orders) subscribed to subscriber 'CLOCK_PRE_CANDLE_START_UPDATES' successfully
+[2023-05-23 14:14:47] [DEBUG] [utils] Function (post_market_end_activities) subscribed to subscriber 'CLOCK_POST_MARKET_END_UPDATES' successfully
+[2023-05-23 14:14:47] [INFO] [tls] Broker connection has been setup successfully.
+[2023-05-23 14:14:47] [INFO] [broker] (NSE_FO) Funds available in client's ABVIRTUALBROKER account is : INR '1000000000.00'
+[2023-05-23 14:14:47] [DEBUG] [funds] Initializing FundManager...
+[2023-05-23 14:14:47] [DEBUG] [funds] Adding funds: INR 1000000000.00. Current credit exposure: INR 1000000000.00
+[2023-05-23 14:14:47] [INFO] [tls] 
+########################################
+ INITIALIZING ALGOBULLS CORE (v3.3.0 SECURE MODE)... 
+########################################
+[2023-05-23 14:14:47] [INFO] [tls] Welcome ALGOBULLS VIRTUAL USER!
+[2023-05-23 14:14:47] [DEBUG] [tls] AlgoBulls Customer Details: None!
+[2023-05-23 14:14:47] [INFO] [tls] Reading strategy...
+[2023-05-23 14:14:47] [DEBUG] [tls] Strategy dir(s): ['./sstrategy/']
+[2023-05-23 14:14:47] [DEBUG] [strategy] Starting strategy in Trade replication mode: MASTER
+[2023-05-23 14:14:47] [INFO] [strategy] 
+########################################
+STRATEGY VERSION: 3.3.1
+########################################
+[2023-05-23 14:14:47] [DEBUG] [strategy] 
+############################################################
+STRATEGY TYPE: OPTIONS | CLIENT: SHANTANU V2
+############################################################
+[2023-05-23 14:14:47] [DEBUG] [utils] Sending command to AB Historical DB [cmd_code: HISTDB_CMD_CODE_FETCH_INSTRUMENT] [cmd_data size: 128] ...
+[2023-05-23 14:14:47] [DEBUG] [utils] Received response | Size: 48 | TAT (sec.): 0.00 | C:3
+[2023-05-23 14:14:47] [DEBUG] [strategy] Underlying instrument NSE_IDX:NIFTY BANK
+[2023-05-23 14:14:47] [INFO] [tls] Entering Backtesting mode. Henceforth, all timestamps will be Backtesting timestamps...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Function (pre_session_start_activity) subscribed to subscriber 'CLOCK_PRE_SESSION_START_UPDATES' successfully
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Function (pre_market_start_activity) subscribed to subscriber 'CLOCK_PRE_MARKET_START_UPDATES' successfully
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Function (post_market_end_activity) subscribed to subscriber 'CLOCK_POST_MARKET_END_UPDATES' successfully
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: pre_session_start_activity (by: CLOCK_PRE_SESSION_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] STARTING ALGOBULLS CORE...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] 
+  #####  #######    #    ######  ####### ### #     #  #####     
+ #     #    #      # #   #     #    #     #  ##    # #     #    
+ #          #     #   #  #     #    #     #  # #   # #          
+  #####     #    #     # ######     #     #  #  #  # #  ####    
+       #    #    ####### #   #      #     #  #   # # #     #    
+ #     #    #    #     # #    #     #     #  #    ## #     #    
+  #####     #    #     # #     #    #    ### #     #  #####     
+
+    #    #        #####  ####### ######  #     # #       #        #####    
+   # #   #       #     # #     # #     # #     # #       #       #     #   
+  #   #  #       #       #     # #     # #     # #       #       #         
+ #     # #       #  #### #     # ######  #     # #       #        #####    
+ ####### #       #     # #     # #     # #     # #       #             #   
+ #     # #       #     # #     # #     # #     # #       #       #     #   
+ #     # #######  #####  ####### ######   #####  ####### #######  #####    
+
+  #####  ####### ######  #######
+ #     # #     # #     # #
+ #       #     # #     # #
+ #       #     # ######  #####
+ #       #     # #   #   #
+ #     # #     # #    #  #
+  #####  ####### #     # ####### 
+
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------Master Cfg Parameters:--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User: ALGOBULLS VIRTUAL USER
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Broker: ABVIRTUALBROKER
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_POSITIONS: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_HOLDINGS_TPLUS1: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] AUTO_ADD_INSTRUMENTS_BUCKET_FROM_HOLDINGS_TPLUS2: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_POSITIONS_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_HOLDINGS_TPLUS1_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] RESUME_HOLDINGS_TPLUS2_ON_START: True
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_INTRADAY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS0_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS1_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] EXIT_TPLUS2_DELIVERY_ORDERS_ON_STOP: False
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: System Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Trading type: BACKTESTING
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User trading start time: 2023-02-01 09:15:00+05:30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] User trading end time: 2023-02-15 15:30:00+05:30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Funds Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Credit Exposure: 1
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Candle Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Candle interval (sec): 1800
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Strategy Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Strategy: Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Parameters: {'FRESH_ORDER_CANDLE': 15, 'START_TIME_HOURS': 9, 'START_TIME_MINUTES': 16, 'END_TIME_HOURS': 15, 'END_TIME_MINUTES': 30, 'SUPERTREND_FACTOR': 2.6, 'SUPERTREND_LENGTH': 8, 'NO_OF_STRIKES_CE': 0, 'NO_OF_STRIKES_PE': 0, 'STRIKE_DIRECTION_CE': 1, 'STRIKE_DIRECTION_PE': 1, 'NO_OF_STRIKES_CE_HEDGE': 5, 'NO_OF_STRIKES_PE_HEDGE': 5, 'STRIKE_DIRECTION_CE_HEDGE': 2, 'STRIKE_DIRECTION_PE_HEDGE': 2, 'STOPLOSS_POINTS': 50, 'HEDGE_POINTS': 30, 'SL_RANGE': 5, 'INSTRUMENT_SEGMENT': 3, 'INSTRUMENT_EXCHANGE_TOKEN': 1016}
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Strategy Mode: DELIVERY
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Instruments Bucket: instruments_bucket | [NSE_FO:BANKNIFTY-I]
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Number of Lots: 1
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Risk Management Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Desired profit: 1000000.0
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite: 1000000.0
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] PnL scan frequency (in sec): 30
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] --------------------User Cfg Parameters: Other Parameters--------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Max orders count: 100
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Crossover accuracy decimals: 2
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] ------------------------------------------------------------
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Instrument (NSE_FO:BANKNIFTY-I) subscribed to historical data successfully
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 09:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Reading data from redis for - ('NSE_FO:BANKNIFTY-I', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Found data from redis for - ('NSE_FO:BANKNIFTY-I', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Prefetched complete historical data for NSE_FO:BANKNIFTY-I
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Prefetched historical data for 1 instruments
+[BT] [2023-02-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] 
+####################
+Strategy Parameters:
+StrategyParameters([('FRESH_ORDER_CANDLE', 15),
+                    ('START_TIME_HOURS', 9),
+                    ('START_TIME_MINUTES', 16),
+                    ('END_TIME_HOURS', 15),
+                    ('END_TIME_MINUTES', 30),
+                    ('SUPERTREND_FACTOR', 2.6),
+                    ('SUPERTREND_LENGTH', 8),
+                    ('NO_OF_STRIKES_CE', 0),
+                    ('NO_OF_STRIKES_PE', 0),
+                    ('STRIKE_DIRECTION_CE', 1),
+                    ('STRIKE_DIRECTION_PE', 1),
+                    ('NO_OF_STRIKES_CE_HEDGE', 5),
+                    ('NO_OF_STRIKES_PE_HEDGE', 5),
+                    ('STRIKE_DIRECTION_CE_HEDGE', 2),
+                    ('STRIKE_DIRECTION_PE_HEDGE', 2),
+                    ('STOPLOSS_POINTS', 50),
+                    ('HEDGE_POINTS', 30),
+                    ('SL_RANGE', 5),
+                    ('INSTRUMENT_SEGMENT', 3),
+                    ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])
+####################
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Launching P&L tracker...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] For the session, the risk appetite absolute value is INR 1000000.00. If net pnl goes below this value, trading would be stopped
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] For the session, desired profit target absolute value is INR 1000000.00. If net pnl goes above this value, trading would be stopped
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Enabling ltp calculation for best case...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Function (pnl_tracker) subscribed to subscriber 'CLOCK_PRE_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Enabling ltp calculation for worst case...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Function (pnl_tracker) subscribed to subscriber 'CLOCK_PRE_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: pre_market_start_activity (by: CLOCK_PRE_MARKET_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Resetting order count for NSE_FO:BANKNIFTY-I...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY-I not present in instruments_bucket_current_day. Adding...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [strategy] Pushed messaging hash request to ABW | method: get | params: {'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'count': 10, 'sort': 'desc'} | data: None
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] Fetched message: {'id': 4142, 'timestamp': '2023-05-23T07:55:27.264900+00:00', 'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'value': {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}}} | {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}} | 4142
+[BT] [2023-02-01 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [strategy] Fetching Options Instruments... | segment=NSE_FO, tradingsymbol_prefix=BANKNIFTY, expiry=2023-02-02
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Sending command to AB Historical DB [cmd_code: HISTDB_CMD_CODE_FETCH_INSTRUMENTS_FILTERED] [cmd_data size: 96] ...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Received response | Size: 1464 | TAT (sec.): 0.00 | C:7
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 09:15:00+05:30 | END: 2023-02-01 09:45:00+05:30
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 09:15:00+05:30 | END: 2023-02-01 09:45:00+05:30
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [strategy] Start time not hit yet
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 09:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 09:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 09:45:00+05:30)...
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 09:45:00+05:30 | END: 2023-02-01 10:15:00+05:30
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 09:45:00+05:30 | END: 2023-02-01 10:15:00+05:30
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 09:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] [Cacher Strategy Redis] Reading data from redis for - NSE_FO:BANKNIFTY-I_15_2023-01-27 09:15:00+05:30_2023-02-15 14:45:00+05:30
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [utils] [Cacher Strategy Redis] Found data from redis for - NSE_FO:BANKNIFTY-I_15_2023-01-27 09:15:00+05:30_2023-02-15 14:45:00+05:30
+[BT] [2023-02-01 09:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41142.0           40617.04
+         (LATEST)            41310.9           40827.77
+[BT] [2023-02-01 09:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 09:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 09:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 10:15:00+05:30)...
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 10:15:00+05:30 | END: 2023-02-01 10:45:00+05:30
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 10:15:00+05:30 | END: 2023-02-01 10:45:00+05:30
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 10:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41310.9           40827.77
+         (LATEST)           41379.45           40827.77
+[BT] [2023-02-01 10:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 10:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 10:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 10:45:00+05:30)...
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 10:45:00+05:30 | END: 2023-02-01 11:15:00+05:30
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 10:45:00+05:30 | END: 2023-02-01 11:15:00+05:30
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 10:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 10:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41379.45           40827.77
+         (LATEST)            41486.9           40896.97
+[BT] [2023-02-01 10:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 10:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 10:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 11:15:00+05:30)...
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 11:15:00+05:30 | END: 2023-02-01 11:45:00+05:30
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 11:15:00+05:30 | END: 2023-02-01 11:45:00+05:30
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 11:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41486.9           40896.97
+         (LATEST)           41469.95           40938.71
+[BT] [2023-02-01 11:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 11:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 11:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 11:45:00+05:30)...
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 11:45:00+05:30 | END: 2023-02-01 12:15:00+05:30
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 11:45:00+05:30 | END: 2023-02-01 12:15:00+05:30
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 11:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 11:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41469.95           40938.71
+         (LATEST)            41516.2           40938.71
+[BT] [2023-02-01 11:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 11:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 11:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 12:15:00+05:30)...
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 12:15:00+05:30 | END: 2023-02-01 12:45:00+05:30
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 12:15:00+05:30 | END: 2023-02-01 12:45:00+05:30
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 12:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41516.2           40938.71
+         (LATEST)            41450.0           40938.71
+[BT] [2023-02-01 12:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 12:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 12:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 12:45:00+05:30)...
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 12:45:00+05:30 | END: 2023-02-01 13:15:00+05:30
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 12:45:00+05:30 | END: 2023-02-01 13:15:00+05:30
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 12:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 12:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41450.0           40938.71
+         (LATEST)           41825.25           40980.09
+[BT] [2023-02-01 12:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 12:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 12:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 13:15:00+05:30)...
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 13:15:00+05:30 | END: 2023-02-01 13:45:00+05:30
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 13:15:00+05:30 | END: 2023-02-01 13:45:00+05:30
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 13:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)           41825.25           40980.09
+         (LATEST)            42033.2           41265.09
+[BT] [2023-02-01 13:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 13:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 13:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 13:45:00+05:30)...
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 13:45:00+05:30 | END: 2023-02-01 14:15:00+05:30
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 13:45:00+05:30 | END: 2023-02-01 14:15:00+05:30
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 13:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 13:45:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            42033.2           41265.09
+         (LATEST)            41474.4           41265.09
+[BT] [2023-02-01 13:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 13:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 13:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 14:15:00+05:30)...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 14:15:00+05:30 | END: 2023-02-01 14:45:00+05:30
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 14:15:00+05:30 | END: 2023-02-01 14:45:00+05:30
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [broker] Positions: []
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | []
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover Details:
+                #       CLOSE_SERIES  SUPERTREND_SERIES
+       (PREVIOUS)            41474.4           41265.09
+         (LATEST)           41257.65           42298.53
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Crossover: Cut downwards
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Instrument (NSE_IDX:NIFTY BANK) subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Reading data from redis for - ('NSE_IDX:NIFTY BANK', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Found data from redis for - ('NSE_IDX:NIFTY BANK', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Prefetched complete historical data for NSE_IDX:NIFTY BANK
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Prefetched historical data for 1 instruments
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 14:15:00+05:30 | END: 2023-02-01 14:45:00+05:30
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [broker] Passing regular case ltp for: NSE_IDX:NIFTY BANK | ltp: 41029.4 | Candle: {'timestamp': Timestamp('2023-02-01 14:15:00+0530', tz='Asia/Kolkata'), 'open': 41029.4, 'high': 41034.3, 'low': 40358.1, 'close': 40362.65, 'volume': 0, 'oi': 0}
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [strategy] Instruments set up instrument NSE_FO:BANKNIFTY-I tradingsymbol suffix {'NIFTY BANK': <OptionsTradingsymbolSuffix.PE: 'PE'>}
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [strategy] Instruments list - ITM, ATM, OTM is - 
+ITM - 
+[NSE_FO:BANKNIFTY02FEB2341100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2341900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2342900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2343900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2344900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2345000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2345100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2345300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2345400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2345500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2346000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2346500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2347000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2348000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2348500PE [LOCAL]]
+ATM -
+NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+OTM -
+[NSE_FO:BANKNIFTY02FEB2335500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2336000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2336500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2337900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2338900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2339900PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340000PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340100PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340200PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340300PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340400PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340500PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340600PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340700PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340800PE [LOCAL], NSE_FO:BANKNIFTY02FEB2340900PE [LOCAL]]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [tls] Selected instruments bucket: [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]]
+[BT] [2023-02-01 14:15:00,000] [INFO] [tls] Entering position for instrument: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [strategy] Child instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Function (check_status) subscribed to subscriber 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Instrument (NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]) subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] 1 Instruments subscribed to historical data successfully
+[BT] [2023-02-01 14:15:00,000] [INFO] [utils] Prefetching historical data for 1 instruments...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Reading data from redis for - ('NSE_FO:BANKNIFTY02FEB2341000PE', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [Cacher Core Redis] Found data from redis for - ('NSE_FO:BANKNIFTY02FEB2341000PE', '30minutes', '2023-01-27 09:15:00+05:30', '2023-02-15 15:30:00+05:30')
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Prefetched complete historical data for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Prefetched historical data for 1 instruments
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 14:15:00+05:30 | END: 2023-02-01 14:45:00+05:30
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [broker] Passing regular case ltp for: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] | ltp: 272.8 | Candle: {'timestamp': Timestamp('2023-02-01 14:15:00+0530', tz='Asia/Kolkata'), 'open': 272.8, 'high': 710.8, 'low': 258.0, 'close': 699.3, 'volume': 15612925, 'oi': 1677875}
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [order] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] Entry price (after rounding to tick_size): 272.80
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [funds] Trying to allocate funds INR 6820.00...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [funds] Funds blocked successfully: INR 6820.00. Total Blocked Funds: INR 6820.00. Reduced credit exposure to INR 999993180.00
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [funds] Funds invested successfully: INR 6820.00.
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Placing NEW order on OMS (order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Moving order to COMPLETE state...
+[2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Adding new position...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [positions] Created new Position object: Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Function (check_status) unsubscribed from SubscriptionManager 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Publishing update to func: update_pnl_table (by: ORDER_COMPLETION_UPDATES)
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Generating Reports...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Dumping PNL Table to 'logs/Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2/2023-05-23/oms_pnl_table.csv'...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Not enough data to compute statistics...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Dumping Statistics to 'logs/Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2/2023-05-23/oms_stats_table.csv'...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [oms] Dumping Order History to 'oms_order_history.log'...
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Adding order 86b02e0b98db44a79ebe37c555335112
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Incremented order count to 1
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [order] Confirming status of placed order (id: (Order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)) with the ABVIRTUALBROKER...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [order] Ensuring order state is not intermediate...
+[BT] [2023-02-01 14:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-01 14:15:00,000] [INFO] [strategy] For NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL], saving instrument string to memory
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [strategy] Pushed messaging hash request to ABW | method: put | params: None | data: {'id': 4142, 'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'value': '{"STRATEGY_KEY": {"NIFTY BANK": {"NORMAL": "BANKNIFTY02FEB2341000PE"}}}'}
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_launched_current_day. Adding...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_running. Adding...
+[BT] [2023-02-01 14:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 14:15:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 14:45:00+05:30)...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 14:45:00+05:30 | END: 2023-02-01 15:15:00+05:30
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 14:45:00+05:30 | END: 2023-02-01 15:15:00+05:30
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with best case ltp of 710.8 | {'timestamp': Timestamp('2023-02-01 14:15:00+0530', tz='Asia/Kolkata'), 'open': 272.8, 'high': 710.8, 'low': 258.0, 'close': 699.3, 'volume': 15612925, 'oi': 1677875}
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 710.8}
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with worst case ltp of 258.0 | {'timestamp': Timestamp('2023-02-01 14:15:00+0530', tz='Asia/Kolkata'), 'open': 272.8, 'high': 710.8, 'low': 258.0, 'close': 699.3, 'volume': 15612925, 'oi': 1677875}
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 258.0}
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 14:45:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 14:45:00,000] [INFO] [strategy] Placing stoploss order for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+[BT] [2023-02-01 14:45:00,000] [INFO] [strategy] For Exit Order: instrument: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] | trigger price: 222.8 | price: 211.66 | qty: 25 | variety: ORDER_VARIETY_STOPLOSS_LIMIT
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Adding order 86b02e0b98db44a79ebe37c555335112 to list of related orders for main order 38cfef2ef9614a72a147a072895104f4...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Adding order 38cfef2ef9614a72a147a072895104f4 to list of related orders for main order 86b02e0b98db44a79ebe37c555335112...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Function (check_status) subscribed to subscriber 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] Entry price (after rounding to tick_size): 222.80
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [oms] Placing NEW order on OMS (order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])...
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING)]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Adding order 38cfef2ef9614a72a147a072895104f4
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Incremented order count to 2
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Confirming status of placed order (id: (Order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING)) with the ABVIRTUALBROKER...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Ensuring order state is not intermediate...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 14:45:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT] [STATUS:TRIGGER PENDING]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [tls] Instruments running: instruments_running | [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]]
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 14:45:00+05:30 | END: 2023-02-01 15:15:00+05:30
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [broker] Passing regular case ltp for: NSE_IDX:NIFTY BANK | ltp: 40350.35 | Candle: {'timestamp': Timestamp('2023-02-01 14:45:00+0530', tz='Asia/Kolkata'), 'open': 40350.35, 'high': 40676.65, 'low': 39490.5, 'close': 40514.85, 'volume': 0, 'oi': 0}
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [strategy] Instruments list - ITM, ATM, OTM is - 
+ITM - 
+[NSE_FO:BANKNIFTY02FEB2335500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2336000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2336500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340300CE [LOCAL]]
+ATM -
+NSE_FO:BANKNIFTY02FEB2340400CE [LOCAL]
+OTM -
+[NSE_FO:BANKNIFTY02FEB2340500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2346000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2346500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2347000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2347500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2348000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2348500CE [LOCAL]]
+[BT] [2023-02-01 14:45:00,000] [INFO] [utils] Crossover Details:
+                  #   HEDGE_CLOSE_SERIES  HEDGE_POINTS_SERIES
+         (PREVIOUS)               274.35                242.8
+           (LATEST)                699.3                242.8
+[BT] [2023-02-01 14:45:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [utils] Publishing update to func: check_status (by: CLOCK_POST_CANDLE_START_UPDATES)
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 14:45:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 14:45:00,000] [INFO] [clock] Waiting for 1800.00 seconds until end of current candle (2023-02-01 15:15:00+05:30)...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 15:15:00+05:30 | END: 2023-02-01 15:45:00+05:30
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-01 15:15:00+05:30 | END: 2023-02-01 15:45:00+05:30
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with best case ltp of 1528.5 | {'timestamp': Timestamp('2023-02-01 14:45:00+0530', tz='Asia/Kolkata'), 'open': 710.45, 'high': 1528.5, 'low': 474.7, 'close': 623.1, 'volume': 4351425, 'oi': 1260975}
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 1528.5}
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with worst case ltp of 474.7 | {'timestamp': Timestamp('2023-02-01 14:45:00+0530', tz='Asia/Kolkata'), 'open': 710.45, 'high': 1528.5, 'low': 474.7, 'close': 623.1, 'volume': 4351425, 'oi': 1260975}
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 474.7}
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 15:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [tls] Instruments running: instruments_running | [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]]
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [tls] Finding instruments which can be launched...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-01 15:15:00+05:30 | END: 2023-02-01 15:45:00+05:30
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [broker] Passing regular case ltp for: NSE_IDX:NIFTY BANK | ltp: 40519.65 | Candle: {'timestamp': Timestamp('2023-02-01 15:15:00+0530', tz='Asia/Kolkata'), 'open': 40519.65, 'high': 40610.7, 'low': 40487.85, 'close': 40499.25, 'volume': 0, 'oi': 0}
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [strategy] Instruments list - ITM, ATM, OTM is - 
+ITM - 
+[NSE_FO:BANKNIFTY02FEB2335500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2336000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2336500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2337900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2338900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2339900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340400CE [LOCAL]]
+ATM -
+NSE_FO:BANKNIFTY02FEB2340500CE [LOCAL]
+OTM -
+[NSE_FO:BANKNIFTY02FEB2340600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2340900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2341900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2342900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2343900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344600CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344700CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344800CE [LOCAL], NSE_FO:BANKNIFTY02FEB2344900CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345100CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345200CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345300CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345400CE [LOCAL], NSE_FO:BANKNIFTY02FEB2345500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2346000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2346500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2347000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2347500CE [LOCAL], NSE_FO:BANKNIFTY02FEB2348000CE [LOCAL], NSE_FO:BANKNIFTY02FEB2348500CE [LOCAL]]
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover Details:
+                  #   HEDGE_CLOSE_SERIES  HEDGE_POINTS_SERIES
+         (PREVIOUS)                699.3                242.8
+           (LATEST)                623.1                242.8
+[BT] [2023-02-01 15:15:00,000] [INFO] [utils] Crossover: Did not cut yet
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [tls] Selected instruments bucket: []
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [utils] Publishing update to func: check_status (by: CLOCK_POST_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "TRIGGER PENDING"...
+[BT] [2023-02-01 15:15:00,000] [DEBUG] [clock] Waiting for candle completion...
+[BT] [2023-02-01 15:15:00,000] [INFO] [clock] Waiting for 900.00 seconds until end of current candle (2023-02-01 15:45:00+05:30)...
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [clock] Awake
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [clock] Processing EOD activities...
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_IDX:NIFTY BANK 
+[BT] [2023-02-01 15:30:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-01 15:15:00+05:30 for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] 
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with best case ltp of 1528.5 | {'timestamp': Timestamp('2023-02-01 14:45:00+0530', tz='Asia/Kolkata'), 'open': 710.45, 'high': 1528.5, 'low': 474.7, 'close': 623.1, 'volume': 4351425, 'oi': 1260975}
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 1528.5}
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with worst case ltp of 474.7 | {'timestamp': Timestamp('2023-02-01 14:45:00+0530', tz='Asia/Kolkata'), 'open': 710.45, 'high': 1528.5, 'low': 474.7, 'close': 623.1, 'volume': 4351425, 'oi': 1260975}
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 474.7}
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-01 15:30:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [oms] Square off of Intraday Positions Initiated...
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [oms] Cancelled order [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: check_status (by: CLOCK_POST_CANDLE_START_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [order] Status for order (id: 38cfef2ef9614a72a147a072895104f4) is "CANCELLED"...
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Function (check_status) unsubscribed from SubscriptionManager 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: clear_queue (by: CLOCK_POST_MARKET_END_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: post_market_end_activities (by: CLOCK_POST_MARKET_END_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [oms] Clearing completed positions at market end...
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [utils] Publishing update to func: post_market_end_activity (by: CLOCK_POST_MARKET_END_UPDATES)
+[BT] [2023-02-01 15:30:00,000] [DEBUG] [clock] Sleeping until next day's market start time...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [clock] Processing Pre-Market activities...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Dropping order(s), if any, for (NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL], ORDER_CODE_DELIVERY_T0, BUY)... Orders: [[2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: pre_market_start_activity (by: CLOCK_PRE_MARKET_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Resetting order count for NSE_FO:BANKNIFTY-I...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY-I not present in instruments_bucket_current_day. Adding...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current intraday positions, if any...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [tls] Processing Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Function (check_status) subscribed to subscriber 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] Entry price (after rounding to tick_size): 272.80
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [funds] Trying to allocate funds INR 6820.00...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [funds] Funds blocked successfully: INR 6820.00. Total Blocked Funds: INR 13640.00. Reduced credit exposure to INR 999986360.00
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [funds] Funds invested successfully: INR 6820.00.
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [RESUME ORDER] [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Placing RESUME order on OMS (order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Moving order to COMPLETE state...
+[2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Position Add: Modifying existing position...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Added order to positions history...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Position after modify: Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:50] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0] | Positions order history: {(NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL], ORDER_CODE_DELIVERY_T0, BUY): [[2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]]}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Function (check_status) unsubscribed from SubscriptionManager 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_pnl_table (by: ORDER_COMPLETION_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE)]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Adding order 82191f7f5c574750bc415976e13c88e9
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Incremented order count to 3
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Confirming status of placed order (id: (Order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE)) with the ABVIRTUALBROKER...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Ensuring order state is not intermediate...
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER] [STATUS:COMPLETE]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Tried adding order which is already present ([2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Adding instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] to instruments_bucket, instruments_launched & instruments_running
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_bucket. Adding...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_bucket_current_day. Adding...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_launched_current_day. Adding...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Instrument NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] not present in instruments_running. Adding...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Opening current holdings, if any...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [strategy] Pushed messaging hash request to ABW | method: get | params: {'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'count': 10, 'sort': 'desc'} | data: None
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Fetched message: {'id': 4142, 'timestamp': '2023-05-23T07:55:27.264900+00:00', 'key': "VM_SOIDSBRO_V2_2023_BACKTESTING_DELIVERY_StrategyParameters([('FRESH_ORDER_CANDLE', 15), ('START_TIME_HOURS', 9), ('START_TIME_MINUTES', 16), ('END_TIME_HOURS', 15), ('END_TIME_MINUTES', 30), ('SUPERTREND_FACTOR', 2.6), ('SUPERTREND_LENGTH', 8), ('NO_OF_STRIKES_CE', 0), ('NO_OF_STRIKES_PE', 0), ('STRIKE_DIRECTION_CE', 1), ('STRIKE_DIRECTION_PE', 1), ('NO_OF_STRIKES_CE_HEDGE', 5), ('NO_OF_STRIKES_PE_HEDGE', 5), ('STRIKE_DIRECTION_CE_HEDGE', 2), ('STRIKE_DIRECTION_PE_HEDGE', 2), ('STOPLOSS_POINTS', 50), ('HEDGE_POINTS', 30), ('SL_RANGE', 5), ('INSTRUMENT_SEGMENT', 3), ('INSTRUMENT_EXCHANGE_TOKEN', 1016)])_test_1", 'value': {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}}} | {'STRATEGY_KEY': {'NIFTY BANK': {'NORMAL': 'BANKNIFTY02FEB2341000PE'}}} | 4142
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [strategy] Fetching Options Instruments... | segment=NSE_FO, tradingsymbol_prefix=BANKNIFTY, expiry=2023-02-02
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Sending command to AB Historical DB [cmd_code: HISTDB_CMD_CODE_FETCH_INSTRUMENTS_FILTERED] [cmd_data size: 96] ...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Received response | Size: 1464 | TAT (sec.): 0.00 | C:7
+[BT] [2023-02-02 09:15:00,000] [INFO] [strategy] Expiry Dates - {'WEEKLY_CURRENT': (datetime.date(2023, 2, 2), 1), 'WEEKLY_NEXT': (datetime.date(2023, 2, 9), 0), 'MONTHLY_CURRENT': (datetime.date(2023, 2, 23), 0), 'MONTHLY_NEXT': (datetime.date(2023, 3, 30), 0)}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [strategy] Fetching Options Instruments... | segment=NSE_FO, tradingsymbol_prefix=BANKNIFTY, expiry=2023-02-02
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Sending command to AB Historical DB [cmd_code: HISTDB_CMD_CODE_FETCH_INSTRUMENTS_FILTERED] [cmd_data size: 96] ...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Received response | Size: 1464 | TAT (sec.): 0.00 | C:7
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-02 09:15:00+05:30 | END: 2023-02-02 09:45:00+05:30
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [clock] New candle: 30minutes | START: 2023-02-02 09:15:00+05:30 | END: 2023-02-02 09:45:00+05:30
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_hist_data_all_subscribed_instruments (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_FO:BANKNIFTY-I 
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_IDX:NIFTY BANK 
+[BT] [2023-02-02 09:15:00,000] [WARNING] [utils] No historical data found for candle: 2023-02-02 09:15:00+05:30 for NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] 
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: process_queue (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_orders (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with best case ltp of 618.5 | {'timestamp': Timestamp('2023-02-01 15:15:00+0530', tz='Asia/Kolkata'), 'open': 618.5, 'high': 618.5, 'low': 515.0, 'close': 580.0, 'volume': 1021075, 'oi': 1203525}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 618.5}
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] P&L: 0.00 (best case)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: pnl_tracker (by: CLOCK_PRE_CANDLE_START_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Positions: [Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Tagging NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] with worst case ltp of 515.0 | {'timestamp': Timestamp('2023-02-01 15:15:00+0530', tz='Asia/Kolkata'), 'open': 618.5, 'high': 618.5, 'low': 515.0, 'close': 580.0, 'volume': 1021075, 'oi': 1203525}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Bulk LTPs fetched: {NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]: 515.0}
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] P&L: 0.00 (worst case)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Risk Appetite not breached yet | PNL Desired not achieved yet
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [tls] Trying to exit position for launched instruments, if any...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Received event EXCEPTION. Stopping AlgoBulls Trading Core Engine...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [tls] Stopping strategy execution for the day...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Cancelling all open orders (if any)... Starting
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING --> CANCEL PENDING --> CANCELLED)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] Ignoring cancel. Order already completed... (Order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER])
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE)
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Cancelling all open orders (if any)... Done
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_INTRADAY (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T0 (if any)...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Will try to exit position for order: [2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Ensuring order state is not intermediate...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Position is open (and not exited externally) Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:25] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 0]...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Adding order 86b02e0b98db44a79ebe37c555335112 to list of related orders for main order 0f807d09f6914923849fbfc0b98c2c8e...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Adding order 0f807d09f6914923849fbfc0b98c2c8e to list of related orders for main order 86b02e0b98db44a79ebe37c555335112...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Function (check_status) subscribed to subscriber 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [clock] Current candle: 30minutes | START: 2023-02-02 09:15:00+05:30 | END: 2023-02-02 09:45:00+05:30
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [broker] Passing regular case ltp for: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL] | ltp: 1000.0 | Candle: {'timestamp': Timestamp('2023-02-02 09:15:00+0530', tz='Asia/Kolkata'), 'open': 1000.0, 'high': 1247.7, 'low': 460.0, 'close': 575.35, 'volume': 1051700, 'oi': 1101050}
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] Entry price (after rounding to tick_size): 1000.00
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [PLACING NEW ORDER] [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Placing NEW order on OMS (order: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Moving order to COMPLETE state...
+[2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Adding order 0f807d09f6914923849fbfc0b98c2c8e to list of related orders for main order 82191f7f5c574750bc415976e13c88e9...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Adding order 82191f7f5c574750bc415976e13c88e9 to list of related orders for main order 0f807d09f6914923849fbfc0b98c2c8e...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Positions: Matched opposite orders:
+MATCH1: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+and
+MATCH2: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Position Add: Modifying existing position...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Dropping position: Position: [ID:fe813ef3858d4b489de7da6a571d2c44] [BUY] [NSE:BANKNIFTY02FEB2341000PE] [NET QTY:0] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [P&L: 11360.0]...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Dropping key from positions_order_history: (NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL], ORDER_CODE_DELIVERY_T0, BUY)
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Function (check_status) unsubscribed from SubscriptionManager 'CLOCK_POST_CANDLE_START_UPDATES' successfully
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [funds] Adding funds: INR 25000.00. Current credit exposure: INR 1000011360.00
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Publishing update to func: update_pnl_table (by: ORDER_COMPLETION_UPDATES)
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [ORDER ID RECEIVED] [ABVIRTUALBROKER] [ID:0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]] [Order ID: (Order: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Adding order 0f807d09f6914923849fbfc0b98c2c8e
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] [BANKNIFTY02FEB2341000PE] Incremented order count to 4
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Confirming status of placed order (id: (Order: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT])
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE)) with the ABVIRTUALBROKER...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Ensuring order state is not intermediate...
+[BT] [2023-02-02 09:15:00,000] [INFO] [order] [NEW ORDER SUCCESS] [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT] [STATUS:COMPLETE]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Instrument exited position: NSE_FO:BANKNIFTY02FEB2341000PE [LOCAL]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] exit_position: Setting position_exited to True for order id: 86b02e0b98db44a79ebe37c555335112...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Will try to exit position for order: [2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Cannot Exit Position again for the order ([2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]). Reason: Position already exited
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Will try to exit position for order: [2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Cannot Exit Position again for the order ([2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]). Reason: Position already exited
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Will try to exit position for order: [2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [order] Cannot Exit Position again for the order ([2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]). Reason: Position already exited
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T1 (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] Exiting all open positions with order code: ORDER_CODE_DELIVERY_T2 (if any)...
+[BT] [2023-02-02 09:15:00,000] [INFO] [oms] 
+
+PENDING ORDERS:
+
+
+COMPLETED ORDERS:
+[2023-02-01 14:15:00+05:30] [86b02e0b98db44a79ebe37c555335112] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 272.8] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+[2023-02-01 14:45:00+05:30] [38cfef2ef9614a72a147a072895104f4] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 25] [ENTRY PRICE: 222.8] [PRICE:211.65] [TRIGGER PRICE:222.8] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_STOPLOSS_LIMIT] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> TRIGGER PENDING --> CANCEL PENDING --> CANCELLED
+
+[2023-02-02 09:15:00+05:30] [82191f7f5c574750bc415976e13c88e9] [BUY] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 272.8] [PRICE:272.8] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_LIMIT] [ORDER_POSITION_ENTER]
+Status History: PUT ORDER REQ RECEIVED --> COMPLETE
+
+[2023-02-02 09:15:00+05:30] [0f807d09f6914923849fbfc0b98c2c8e] [SELL] [NSE_FO:BANKNIFTY02FEB2341000PE] [QTY:25] [QTY PENDING: 0] [ENTRY PRICE: 1000.0] [PRICE:None] [TRIGGER PRICE:None] [ORDER_TYPE_REGULAR] [ORDER_CODE_DELIVERY_T0] [ORDER_VARIETY_MARKET] [ORDER_POSITION_EXIT]
+Status History: PUT ORDER REQ RECEIVED --> VALIDATION PENDING --> OPEN PENDING --> OPEN --> COMPLETE
+
+
+POSITIONS:
+
+
+HOLDINGS:
+
+
+
+
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Generating Reports...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Dumping PNL Table to 'logs/Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2/2023-05-23/oms_pnl_table.csv'...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Dumping Statistics to 'logs/Strategy Options Intraday Delivery Supertrend Buy Reversal Only V2/2023-05-23/oms_stats_table.csv'...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Dumping Order History to 'oms_order_history.log'...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [oms] Clearing orders...
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [utils] Signalling all SubscriptionManager instances to stop...
+[BT] [2023-02-02 09:15:00,000] [INFO] [tls] [User: ALGOBULLS VIRTUAL USER] Trading session completed
+[BT] [2023-02-02 09:15:00,000] [CRITICAL] [tls] Dumping Debug Stack to Python friendly Traceback Format for Python Build Customers: Uncaught exception | Exception Class: <class 'KeyError'> | Exception Details: 'HEDGE' | Traceback Below:
+  File "/home/satyamverma/work/strategy/7.options_v3/./sstrategy/strategy_options_intraday_delivery_supertrend_buy_reversal_only_v2.py", line 437, in strategy_select_instruments_for_exit
+    self.logger.debug(f"HEDGE {self.strategy_dictionary[base_inst_str][HEDGE]} | NORMAL: {self.strategy_dictionary[base_inst_str][NORMAL]}")
+
+[BT] [2023-02-02 09:15:00,000] [CRITICAL] [tls] An error has occurred due to which the strategy execution cannot proceed anymore. Reason: 'HEDGE'.
+If the reason doesn't help, please double check the tweak parameters. If everything seems fine, please checkout https://community.algobulls.com or contact developers@algobulls.com for support.
+[BT] [2023-02-02 09:15:00,000] [DEBUG] [tls] Uncaught exception | Exception Class: <class 'KeyError'> | Exception Details: 'HEDGE' | Traceback Below:
+  File "</eapps_release/abc/algobulls_backend_core/tls/tls_yaml.py>", line 2, in <module>
+  File "<frozen algobulls_backend_core.tls.tls_yaml>", line 269, in <module>
+  File "<frozen algobulls_backend_core.tls.tls_yaml>", line 269, in <module>
+  File "<frozen algobulls_backend_core.tls.tls_yaml>", line -1, in run
+  File "<frozen algobulls_backend_core.tls.tls_yaml>", line -1, in run
+  File "<frozen algobulls_backend_core.tls.tls_base>", line -1, in run
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1261, in run
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1240, in run
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1092, in execute_strategy
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1092, in execute_strategy
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1127, in execute_strategy_execution_mode
+  File "<frozen algobulls_backend_core.tls.tls_base>", line 1127, in execute_strategy_execution_mode
+  File "<frozen algobulls_backend_core.strategy.core._strategy_base>", line 26, in wrapped
+  File "<frozen algobulls_backend_core.strategy.core._strategy_base>", line 26, in wrapped
+  File "/home/satyamverma/work/strategy/7.options_v3/./sstrategy/strategy_options_intraday_delivery_supertrend_buy_reversal_only_v2.py", line 437, in strategy_select_instruments_for_exit
+    self.logger.debug(f"HEDGE {self.strategy_dictionary[base_inst_str][HEDGE]} | NORMAL: {self.strategy_dictionary[base_inst_str][NORMAL]}")
+
